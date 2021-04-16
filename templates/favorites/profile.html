@@ -1,0 +1,53 @@
+<!-- head para PC -->
+{% extends "favorites/base_favorites.html" %}
+
+{% load  static %}
+
+{% block title %}
+{{  home.title }}
+{% endblock title %}
+
+{% block content %}
+
+{% include "includes/header.html" %}
+
+<div class="grid-container">
+    <div class="grid-x grid-margin-x align-center" style="margin-top: 1em;">
+        <!-- bloque de datos de usuario -->
+        <div class="cell small-12 large-4">
+            <div class="callout">
+                <h5>{{ user.full_name }}</h5>
+                <p>{{ user.email }} - {{ user.ocupation }} - {{ user.bdate_birth }}</p>
+                <a href="#">Editar Datos</a>
+                <p>
+                    <a href="{% url 'users_app:user-logout' %}" class="clear button secondary">Cerrar sesión</a>
+                </p>
+            </div>
+        </div>
+        <!-- FIN bloque de datos de usuario -->
+
+
+        <!-- bloque de articulos favoritos de usuario -->
+        <div class="cell large-8 grid-x grid-margin-x align-center">
+            {% for entry_user in entries_user %}
+            <div class="cell small-12">
+                <div class="card-favoritos">
+                    <img class="card-favoritos-img" src="{{ entry_user.entry.image.url }}">
+                    <div class="card-favoritos-body">
+                        <h3 class="card-favoritos-body-titulo">{{ entry_user.entry.title }}</h3>
+                        <p class="card-favoritos-body-text">{{ entry_user.entry.resume }}</p>
+                        <form class="card-favoritos-body-actions" method="POST" action="{% url 'favorites_app:delete-favorites' entry_user.entry.slug  %}">{% csrf_token %}
+                            <a class="button warning" href="{% url 'entry_app:entry-detail' entry_user.entry.slug %}">Ver</a>
+                            <button type="submit" class="button alert">Eliminar</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+        <!-- FIN bloque de articulos favoritos de usuario -->
+    </div>
+</div>
+{% include "includes/footer.html" %}
+
+{% endblock content %}
