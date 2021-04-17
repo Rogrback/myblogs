@@ -3,14 +3,15 @@ Blog personal desarrollado con el framework Django y apoyado con Foundation (fra
 
 # Vista principal
 La vista principal contiene de 5 secciones:
-Primero, la sección de artículo principal. (Lado izquierdo de la parte de arriba)
-Segundo, los 4 artículos secundarios que dueño del blog desea proyectar. (Lado derecho de la parte de arriba)
-Tercero, una pequeña descripción del blogger que se presenta y a su vez un botón de suscripción. (Parte central)
-Cuarto, los artículos recientemente subido al blog. (Parte de abajo) 
+- Primero, la sección de artículo principal. (Lado izquierdo de la parte de arriba)
+- Segundo, los 4 artículos secundarios que dueño del blog desea proyectar. (Lado derecho de la parte de arriba)
 
 ![image](https://user-images.githubusercontent.com/53346752/115108583-ea20ca80-9f36-11eb-953e-a4450eaf8881.png)
 
-Y por último, un formulario de contactos donde el usuario puede mandar un mensaje, así como, un apartado pequeño que describe otras formas de contacto que son correo y número de telófono del blogger.
+- Tercero, una pequeña descripción del blogger que se presenta y a su vez un botón de suscripción. (Parte de abajo)
+- Cuarto, los artículos recientemente subido al blog. (Parte de abajo) 
+
+- Y por último, un formulario de contactos donde el usuario puede mandar un mensaje, así como, un apartado pequeño que describe otras formas de contacto que son correo y número de telófono del blogger.
 
 ![image](https://user-images.githubusercontent.com/53346752/115108803-0c671800-9f38-11eb-8242-b947611a5c6b.png)
 
@@ -44,7 +45,13 @@ En esta vista se visualiza los artículos favoritos que agregó el usuario guard
 
 ![image](https://user-images.githubusercontent.com/53346752/115109363-0161b700-9f3b-11eb-8466-6313809ff62a.png)
 
+# AnonymousUser - Header Html con usuario logueado
+
 Como se pudieron percatar, en la vista de los artículos expuestos y la vista del perfil del usuario ya no tenemos el botón de Acceder (que permitia mostrar el acceso de usuarios), ya que esto se muestra cuando no hay un usuario logueado en el blog. Caso contrario, con un usuario logueado se muestra el botón de Perfil.
+
+Esta propiedad de Django que se implementa dentro del código Html, permite mostrar la vista de dos botones diferentes:
+- El botón de perfil, se muestra cuando el usuario está logueado.
+- El botón de Acceder, se muestra cuando no hay un usuario logueado.
 
 ![image](https://user-images.githubusercontent.com/53346752/115109312-b778d100-9f3a-11eb-9c4b-c903bc0db196.png)
 
