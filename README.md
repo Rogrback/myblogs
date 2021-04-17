@@ -55,7 +55,7 @@ Esta propiedad de Django que se implementa dentro del código Html, permite most
 
 ![image](https://user-images.githubusercontent.com/53346752/115109312-b778d100-9f3a-11eb-9c4b-c903bc0db196.png)
 
-# SEO con Sitemap
+# SEO con Sitemap 
 Así como, la implementación de sitemap, lo cuál es un archivo que sirve como herramienta la mejora de búsqueda y posicionamiento en el buscador de Google. Adicionalmente, genera un archivo "sitemap.xml" (el nombre es relativo pero debe tener la terminación de ".xml" para guardarse como archivo de lectura).
 
 Archivo generado a través de las URL's definidas en este proyecto:
