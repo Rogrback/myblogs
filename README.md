@@ -49,8 +49,8 @@ En esta vista se visualiza los artículos favoritos que agregó el usuario guard
 
 Como se pudieron percatar, en la vista de los artículos expuestos y la vista del perfil del usuario ya no tenemos el botón de Acceder (que permitia mostrar el acceso de usuarios), ya que esto se muestra cuando no hay un usuario logueado en el blog. Caso contrario, con un usuario logueado se muestra el botón de Perfil.
 
-Esta propiedad de Django que se implementa dentro del código Html, permite mostrar la vista de dos botones diferentes:
-- El botón de perfil, se muestra cuando el usuario está logueado.
+Esta propiedad de Django que se implementa dentro del código Html, permite mostrar la vista de un solo botón de los dos botones diferentes declarados:
+- El botón de Perfil, se muestra cuando el usuario está logueado.
 - El botón de Acceder, se muestra cuando no hay un usuario logueado.
 
 ![image](https://user-images.githubusercontent.com/53346752/115109312-b778d100-9f3a-11eb-9c4b-c903bc0db196.png)
