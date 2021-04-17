@@ -1,5 +1,5 @@
 # myblog
-Blog personal apoyado con Foundation (framework CSS) para los templates. Por otro lado, implementé un atributo llamado "slug" para asignar, en este caso, cada título de un artículo para la URL. 
+Blog personal apoyado con Foundation (framework CSS) para los templates. Por otro lado, implementé un atributo llamado "slug" en el modelo de Entrada para asignar, en este caso, cada título de un artículo para la URL. 
 # SEO con Sitemap
 Así como, la implementación de sitemap, lo cuál es un archivo que sirve como herramienta la mejora de búsqueda y posicionamiento en el buscador de Google. Adicionalmente, genera un archivo "sitemap.xml" (el nombre es relativo pero debe tener la terminación de ".xml" para guardarse como archivo de lectura).
 
